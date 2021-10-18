@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.pulsante {
+    background: #ee7560;
+    border: 2px #ee7560 solid;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.pulsante:hover {
+    background: white;
+    color: #ee7560;
+}
+
+/* Per centrare l'immagine - in combo con img display:block; */
+header img {
+    margin: 0 auto; 
+}
+
+/* HERO */
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* TESTO */
+#testo {
+    background-color: white;
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#testo h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    line-height: 70px;
+    padding-bottom: 20px;
+    color: #ee7560;
+}
+
+#vantaggi {
+    background-color: #f8f3f0;
+    padding: 100px 50px;
+}
+
+#vantaggi .flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+#vantaggi .flex-container .flex-item {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-item h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ee7560;
+    padding: 0 0 10px;
+}
+
+/* FORM CONTATTACI */
+#form h2 {
+    text-align: center;
+    padding: 0 0 20px;
+    font-family: 'Pacifico', cursive;
+    color: #ee7560;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+#form {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 100px 50px 100px 50px;
+}
+
+#form .flex-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#form .flex-form .inputDiv {
+    width: 33.3%;
+    padding: 20px;
+    text-align: center;
+}
+
+#form .flex-form .inputDiv label{
+    padding: 0 15px 10px;
+    text-align: left;
+    display: block;
+    font-size: 14px;
+}
+
+#form .flex-form .inputDiv.larghezza100 {
+    width: 100%;
+}
+
+#form .flex-form .inputDiv input[type="text"],
+#form .flex-form .inputDiv input[type="email"],
+#form .flex-form .inputDiv textarea, 
+#form .flex-form .inputDiv select {
+    width: 100%;
+    display: block;
+    background: #FAFAFA;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    font-size: 12px;
+    outline-color: #ee7560;
+}
+
+#form .flex-form .inputDiv textarea {
+    resize: none;
+    height: 100px;
+}
+
+#form #privacy_form {
+    width:100%;
+    text-align: left;
+}
+
+#form #privacy_form p {
+    font-weight: bold;
+    padding: 0 15px 5px;
+    font-size: 14px;
+}
+
+#form #privacy_form label, input[type="radio"] {
+    display: inline-block;
+}
+
+/* FOOTER */
+footer {
+    padding: 100px 50px;
+    background-color:black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #ee7560;
+}
+
+@media all and (max-width: 990px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+    }
+
+    #testo {
+        padding: 50px 20px;
+    }
+    
+    #testo h1 {
+        font-size: 30px;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+
+    #vantaggi {
+        padding: 50px 20px;
+    }
+    
+    #vantaggi .flex-container {
+        flex-wrap: wrap;
+    }
+
+    #vantaggi .flex-container .flex-item {
+        width: 100%;
+    }
+
+
+    #form {
+        padding: 50px 20px;
+    }
+
+    #form h2 {
+        padding: 0 0 10px;
+        font-size: 30px;
+    }
+
+    #form .flex-form .inputDiv {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 50px 20px;
+    }
+}

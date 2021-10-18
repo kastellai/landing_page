@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Questa è la mia landing page!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Bakery" width="150" height="150">
+    </header>
+
+    <div id="hero">
+        <picture>
+            <source media="(min-width: 991px)" srcset="img/top-d.jpg">
+            <img src="img/top-m.jpg" alt="Bakery-hero" width="700" height="700">
+        </picture>
+    </div>
+
+    <div id="testo">
+        <h1>Benvenuti su Bakery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nisi, totam nulla, dolorum fugit placeat
+            culpa quod error enim nihil voluptatem eius sint officia, fugiat asperiores cum autem natus optio? fugiat
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet odio omnis maiores pariatur impedit. Earum
+            quod provident qui eum ipsam nostrum! At laudantium odio ab exercitationem error voluptatibus commodi
+            voluptates?</p>
+        <a href="#form" class="pulsante">Contattaci</a>
+    </div>
+
+    <div id="vantaggi">
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>Vantaggio 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus numquam assumenda deleniti minus
+                    nulla dolorum, libero modi itaque distinctio.</p>
+            </div>
+            <div class="flex-item">
+                <h2>Vantaggio 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ullam doloribus repudiandae perferendis
+                    asperiores cupiditate, molestiae nisi!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="form">
+        <h2>Contattaci</h2>
+        <form id="contattaci" name="contattaci" action="#">
+            <div class="flex-form">
+                <div class="inputDiv">
+                    <label for="reparto">Scegli il reparto*</label>
+                    <select name="reparto" id="reparto" required>
+                        <option value="">None</option>
+                        <option value="commerciale">Commerciale</option>
+                        <option value="sviluppo">Sviluppo</option>
+                    </select>
+                </div>
+                <div class="inputDiv">
+                    <label for="nome">Nome*</label>
+                    <input name="nome" id="nome" type="text" placeholder="Scrivi qui il tuo nome" required>
+                </div>
+                <div class="inputDiv">
+                    <label for="email">Email*</label>
+                    <input name="email" id="email" type="email" placeholder="Scrivi qui la tua email" required>
+                </div>
+                <div class="inputDiv larghezza100">
+                    <label for="messaggio">Messaggio</label>
+                    <textarea name="messaggio" id="messaggio" placeholder="Scrivi qui il tuo messaggio"></textarea>
+                </div>
+                <div class="inputDiv" id="privacy_form">
+                    <p>Accettazione della privacy</p>
+                    <label for="privacy_y">si</label>
+                    <input type="radio" id="privacy_y" name="privacy" value="SI">
+                    <label for="privacy_n">no</label>
+                    <input type="radio" id="privacy_n" name="privacy" value="NO">
+                </div>
+                <div class="inputDiv larghezza100">
+                    <input id="send" class="pulsante" type="submit" value="Invia">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Edgemony P.iva 12345678911 - Credits by <a href="https://edgemony.com/" target="_blank">Bootcamp Edge</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
